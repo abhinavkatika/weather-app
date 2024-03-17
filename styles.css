@@ -1,0 +1,144 @@
+*{
+    display: block;
+}
+
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+/* Style the input field */
+#cityinput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image */
+body {
+    background-image: url('./weatherbg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Add any additional background properties here (e.g., background-position) */
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Add other container styles as needed */
+}
+
+
+
+/* Style the submit button */
+#add {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    scrollbar-highlight-color: ;
+    margin-left: 10px;
+    /* Add more button styles if needed */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Input Section Styles */
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.wrapper {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a card-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Subtle shadow for depth */
+                0 2px 4px rgba(0, 0, 0, 0.05); /* Additional light shadow for borders */
+    margin-top: 20px; /* Space between the submit button and the card */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for animations */
+    transform: scale(1); /* Initial scale */
+    width: 1000px;height: fit-content;
+}
+
+/* Hover effect to slightly enlarge the card */
+.wrapper:hover {
+    transform: scale(1.02); /* Slightly enlarge the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), /* Enlarged shadow for depth on hover */
+                0 3px 6px rgba(0, 0, 0, 0.05); /* Enlarged light shadow for borders on hover */
+}
+
+/* Active effect to slightly reduce the card */
+.wrapper:active {
+    transform: scale(0.98); /* Slightly reduce the card on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), /* Slightly reduced shadow for depth on active */
+                0 1px 2px rgba(0, 0, 0, 0.05); /* Slightly reduced light shadow for borders on active */
+}
+
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #666;
+    width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inputs {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*
